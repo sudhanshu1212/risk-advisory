@@ -1,3 +1,7 @@
+body{
+  background-color: antiquewhite;
+}
+
 .App {
   text-align: center;
 }
@@ -58,8 +62,11 @@
 .products-card-info{
   display: flex;
   flex-direction: row;
+  
+  flex-wrap: wrap;
   margin: 5px;
   padding: 2px;
+  
 }
 
 .form-group{

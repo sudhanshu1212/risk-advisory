@@ -5,6 +5,8 @@ import ShowEquities from './components/ShowEquities';
 import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import  NavBarMenu from './components/NavBarMenu';
 import AddEquities from './components/AddEquities';
+import EquitiesDetail from './components/EquitiesDetail';
+import UpdateEquities from './components/UpdateEquities';
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,12 @@ function App() {
 
         <Routes>
           <         Route path="/addEquities" element={<AddEquities />} />
+        </Routes>
+        <Routes>
+          <         Route path="/:id/" element={<EquitiesDetail />} />
+        </Routes>
+        <Routes>
+          <         Route path="/:id/update" element={<UpdateEquities />} />
         </Routes>
       </Router>
     </div>

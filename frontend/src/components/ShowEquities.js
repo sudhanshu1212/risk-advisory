@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useParams,Link } from 'react-router-dom' ;
 
 
 const ShowEquities = () => {
@@ -41,8 +42,11 @@ const ShowEquities = () => {
                             <Card.Title>{product.industry}</Card.Title>
                             <Card.Title>{product.ticker}</Card.Title>
                             {/* <Button variant="primary">Go somewhere</Button> */}
+                            <Link className='btn btn-primary m-2' to={`/${product.id}/`}>Show Details</Link>
                         </Card.Body>
+
                     </Card>
+
                 ))
             }
         </div>
