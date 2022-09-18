@@ -77,7 +77,7 @@ function App() {
     return (
         
         <div className="App" style={{ alignContent:'center',margin:"20px"}}>
-            <h1>Click button to see graph</h1>
+            <h1>showing graph by equity_id</h1>
             <input
                 type="text"
                 className="form-control form-control-lg"
@@ -87,7 +87,7 @@ function App() {
                 onChange={(e) => setvalue(e.target.value)}
 
             />
-            <button onClick={ShowGraph}>click to see for specifc data</button>
+            <button onClick={ShowGraph}>click to see for specifc id</button>
             <Line data={data}>Hello</Line>
         
             
