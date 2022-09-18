@@ -72,5 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Screenshots :
 ![Graph](https://i.imgur.com/HzSYVcp.png)
 ![Upload_csv](https://i.imgur.com/3bEOMij.png)
-![Add_equities](https://imgur.com/FP2rWep)
-![Show_equities](https://imgur.com/pPlsAg7)
+![Add_equities](https://imgur.com/FP2rWep.png)
+![Show_equities](https://imgur.com/pPlsAg7.png)
