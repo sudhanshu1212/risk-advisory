@@ -53,14 +53,14 @@ class  Value(models.Model):
 
 class  Returns(models.Model):
     equity_id=models.AutoField(max_length=6,null=False,blank=False,primary_key=True)
-    start_date=models.DateField(null=False,blank=False)
-    returns=models.DecimalField(max_digits=20,decimal_places=20,null=False,blank=False)
-    equity_id=models.CharField(max_length=6,null=False,blank=False)
-    open=models.DecimalField(max_digits=19,decimal_places=10,null=False,blank=False)
-    high=models.DecimalField(max_digits=19,decimal_places=10,null=False,blank=False)
-    low=models.DecimalField(max_digits=19,decimal_places=10,null=False,blank=False)
-    close=models.DecimalField(max_digits=19,decimal_places=10,null=False,blank=False)
-    adj_close=models.DecimalField(max_digits=19,decimal_places=10,null=False,blank=False)
+    date=models.DateField(null=True,blank=True)
+    returns=models.DecimalField(max_digits=20,decimal_places=20,null=True,blank=True)
+    equity_id=models.CharField(max_length=6,null=True,blank=True)
+    open=models.DecimalField(max_digits=19,decimal_places=10,null=True,blank=True)
+    high=models.DecimalField(max_digits=19,decimal_places=10,null=True,blank=True)
+    low=models.DecimalField(max_digits=19,decimal_places=10,null=True,blank=True)
+    close=models.DecimalField(max_digits=19,decimal_places=10,null=True,blank=True)
+    adj_close=models.DecimalField(max_digits=19,decimal_places=10,null=True,blank=True)
     def __str__(self):
         return self.equity_id
 

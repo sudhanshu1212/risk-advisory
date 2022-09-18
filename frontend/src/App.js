@@ -3,15 +3,16 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import ShowEquities from './components/ShowEquities';
 import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
-import  NavBarMenu from './components/NavBarMenu';
+import NavBarMenu from './components/NavBarMenu';
 import AddEquities from './components/AddEquities';
 import EquitiesDetail from './components/EquitiesDetail';
 import UpdateEquities from './components/UpdateEquities';
+import Csv from './components/Csv';
 function App() {
   return (
     <div className="App">
       <Router>
-        <NavBarMenu/>
+        <NavBarMenu />
         <Routes>
           <         Route path="/" element={<ShowEquities />} />
         </Routes>
@@ -20,10 +21,13 @@ function App() {
           <         Route path="/addEquities" element={<AddEquities />} />
         </Routes>
         <Routes>
-          <         Route path="/:id/" element={<EquitiesDetail />} />
+          <         Route path="/:id" element={<EquitiesDetail />} />
         </Routes>
         <Routes>
           <         Route path="/:id/update" element={<UpdateEquities />} />
+        </Routes>
+        <Routes>
+          <         Route path="csv" element={<Csv />} />
         </Routes>
       </Router>
     </div>
