@@ -17,7 +17,8 @@ const NavBarMenu = () => {
                         <Nav className="me-auto">
                             <NavLink className="show-products-nav"  to="/">Equities</NavLink>
                             <NavLink className="add-product-nav"  to="/addEquities">Add Equities</NavLink>
-                            
+                            <NavLink className="add-product-nav"  to="/csv">Add csv </NavLink>
+                            <NavLink className="add-product-nav"  to="/graphs">see graph</NavLink>
                         </Nav>
                     
                 

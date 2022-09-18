@@ -41,10 +41,9 @@ export default function Csv() {
 
     return (
         <div>
-            <h1 className="text-center text-4xl">Contact Import</h1>
+            <h1 className="text-center text-4xl">Upload CSV </h1>
             <div
-                className={`p-6 my-2 mx-auto max-w-md border-2 ${highlighted ? "border-green-600 bg-green-100" : "border-gray-600"
-                    }`}
+                className="hay"
                 onDragEnter={() => {
                     setHighlighted(true);
                 }}
@@ -69,7 +68,7 @@ export default function Csv() {
             >
                 DROP HERE
             </div>
-            const
+            {/* Drop above
             <ul>
                 {contacts.map((contact) => (
 
@@ -77,7 +76,7 @@ export default function Csv() {
                         <strong>{contact.open}</strong>: {contact.date}
                     </li>
                 ))}
-            </ul>
+            </ul> */}
             <button onClick={addreturn}>to Upload data</button>
         </div>
     );

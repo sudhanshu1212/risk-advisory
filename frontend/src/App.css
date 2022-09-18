@@ -17,6 +17,21 @@ body{
   }
 }
 
+.hay {
+  color: blue;
+  border: solid 4px;
+  margin-left: 39%;
+  margin-right: 39%;
+  height: 50px;
+}
+
+.hay:hover {
+  color: red;
+  border: solid 9px;
+  margin-left: 29%;
+  margin-right: 29%;
+  
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

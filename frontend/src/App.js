@@ -8,6 +8,7 @@ import AddEquities from './components/AddEquities';
 import EquitiesDetail from './components/EquitiesDetail';
 import UpdateEquities from './components/UpdateEquities';
 import Csv from './components/Csv';
+import Graphs from './components/Graphs';
 function App() {
   return (
     <div className="App">
@@ -21,14 +22,19 @@ function App() {
           <         Route path="/addEquities" element={<AddEquities />} />
         </Routes>
         <Routes>
+          <         Route path="/csv" element={<Csv />} />
+        </Routes>
+        <Routes>
           <         Route path="/:id" element={<EquitiesDetail />} />
         </Routes>
+        
         <Routes>
           <         Route path="/:id/update" element={<UpdateEquities />} />
         </Routes>
         <Routes>
-          <         Route path="csv" element={<Csv />} />
+          <         Route path="/graphs" element={<Graphs />} />
         </Routes>
+        
       </Router>
     </div>
   );

@@ -23,7 +23,7 @@ const ProductDetail=()=>{
 
     return (
         <div>
-            <h1>Product detail</h1>
+            <h1>Equities detail</h1>
             <div className="single-product-info">
                 <p>{product.name}</p>
             </div>
